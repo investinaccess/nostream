@@ -73,6 +73,7 @@ WORKDIR /app
 
 COPY --from=build /build/dist .
 ADD resources /app/resources
+COPY .nostr/settings.yaml /app/.nostr/settings.yaml
 
 RUN npm install --omit=dev --quiet
 
