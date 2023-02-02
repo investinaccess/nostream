@@ -37,7 +37,7 @@ workers:
   count: 8
 mirroring:
   static:
-    - address: eden.nostr.land
+    - address: wss://eden.nostr.land
       filters:
         - limit: 1000
 limits:
